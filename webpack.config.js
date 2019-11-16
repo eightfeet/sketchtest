@@ -77,7 +77,6 @@ module.exports = (env, argv) => {
 							pure_getters: true,
 							collapse_vars: true,
 							unsafe: true,
-							warnings: false,
 							sequences: true,
 							dead_code: true,
 							drop_debugger: true,
