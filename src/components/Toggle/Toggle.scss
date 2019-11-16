@@ -1,0 +1,93 @@
+$input-padding: 0.6rem 1.2rem;
+$input-height: 3rem;
+$disabled-color: $gray-lighter;
+$disabled-bg-color: $gray-lightest;
+$border-color: lighten($gray, 42%) !default;
+$height: 2rem;
+$inner-spacing: 0.2rem;
+$thumb-height: $height - $inner-spacing * 2;
+$thumb-width: 2.6rem;
+
+.root {
+  display: inline-block;
+  height: $input-height;
+  line-height: $input-height;
+}
+
+.input {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  padding: 0 ($thumb-height * 0.4);
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  pointer-events: none;
+  color: #fff;
+  border-radius: $height;
+  line-height: $height;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: $thumb-width;
+    height: $thumb-height;
+    margin: $inner-spacing 0;
+    content: ' ';
+    transition: left 0.3s ease, margin-left 0.3s ease;
+    border-radius: $thumb-height;
+    background-color: #fff;
+  }
+}
+
+.text {
+  display: inline-block;
+  min-width: ($thumb-width * 0.9);
+  transition: opacify 0.3s ease;
+  text-align: center;
+  opacity: 0;
+}
+
+.visiable {
+  opacity: 1;
+}
+
+.on {
+  background-color: $green;
+
+  &::before {
+    left: 100%;
+    margin-left: - ($thumb-width + $inner-spacing);
+  }
+}
+
+.off {
+  background-color: $green;
+
+  &::before {
+    left: 0;
+    margin-left: $inner-spacing;
+  }
+}
+
+.twowaysoff {
+  background-color: $green;
+}
+
+.disabled {
+  .toggle {
+    color: $disabled-color;
+    background-color: $disabled-bg-color;
+    box-shadow:
+      rgba(black, $shadowalph) 1px 0 1px,
+      rgba(black, $shadowalph) 0 1px 1px,
+      rgba(black, $shadowalph) -1px 0 1px,
+      rgba(black, $shadowalph) 0 -1px 1px;
+  }
+}

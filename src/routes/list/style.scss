@@ -1,0 +1,281 @@
+.imgbox{
+	position: absolute;
+	img {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+}
+
+.root {
+	height: 100%;
+	width: 100%;
+}
+
+.list {
+	position: absolute;
+	top: 2.6rem;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+}
+
+.loading {
+	position: absolute;
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 0.8rem;
+	color: #888;
+	z-index: 10;
+	text-align: center;
+
+	img {
+		height: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+.backToTop {
+	background-color: red;
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.checked {
+	color: $spec-green;
+}
+
+.checked:hover {
+	color: red;
+}
+
+.menu {
+	position: absolute;
+	right: 0rem;
+	left: 0rem;
+	bottom: 0;
+	padding: 0rem 0.5rem 0.5rem 0.5rem;
+	top: 2.5rem;
+	z-index: 100;
+
+	ul {
+		background-color: #00b67b;
+		border-radius: 0 0 0.5rem 0.5rem;
+		color: #fff;
+		overflow: hidden;
+		position: relative;
+		z-index: 2
+	}
+	li{
+		height: 4rem;
+		line-height: 4rem;
+		border-top: 1px solid #0cda97;
+		border-bottom: 1px solid #039263;
+		font-size: 1.2rem;
+	}
+	li:first-child {
+		border-top: none;
+	}
+	li:last-child {
+		border-bottom: none;
+	}
+
+	.over {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+}
+
+.filter {
+	li{
+		height: 3rem;
+		line-height: 3rem;
+	}
+}
+
+.findbymodelidbox {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.findbymodelid {
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	left: 0;
+	right: 0;
+	top: 2.5rem;
+	bottom: 0rem;
+	position: absolute;
+	overflow: auto;
+	-webkit-overflow-scrolling : touch;
+}
+
+.fbmbox {
+	background-color: #00b67b;
+	min-height: 100%;
+	li {
+		height: 7.5rem;
+		// border-top: 1px solid #0cda97;
+		border-bottom: 1px solid #039263;
+		position: relative;
+
+		img {
+			height: 6rem;
+			border: 3px solid #fff;
+			background: #fff;
+			display: inline-block;
+			margin: 0.5rem 0.5rem 0.5rem 1rem;
+		}
+
+		.checkbox {
+			position: absolute;
+			right: 1rem;
+			top: 0rem;
+			font-size: 1.2rem;
+			text-align: right;
+			width: 3rem;
+			height: 7.5rem;
+			color: #00885c;
+			line-height: 7.5rem;
+			padding-left: 1rem;
+			background-image: linear-gradient(to right, rgba(255,150,0,0), #00b67b);
+			&.select {
+				color: #fff;
+			}
+		}
+
+	}
+	li:first-child {
+		border-top: none;
+	}
+	li:last-child {
+		border-bottom: none;
+	}
+}
+
+.dock {
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1rem;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+.checkboxitem {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.2);
+	right: 0.5rem;
+	top: 0.5rem;
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+	box-sizing: border-box;
+	border-radius: 60px;
+
+	&.selecteditem {
+		background-color: #01ffad;
+	}
+	
+}
+
+.more {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 100;
+	border-radius: 30px;
+	width: 100px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: rgb(0, 182, 123);
+	color: #fff;
+}
+
+li.bymodel {
+	height: 10rem;
+	color: #673ab7;
+	background-color: #ffeb3b;
+	line-height: 10rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	i {
+		display: inline-block;
+		background-color: #673ab7;
+		width: 5rem;
+		height: 5rem;
+		font-size: 2rem;
+		line-height: 4.5rem;
+		text-align: center;
+		padding-left: 0;
+		color: #ffeb3b;
+		border-radius: 1000px;
+		vertical-align: middle;
+		font-weight: bold;
+	}
+}
+
+.modelstitle {
+	color: #fff;
+	position: absolute;
+	right: 2.5rem;
+	width: 16rem;
+	top: 3rem;
+	text-align: right;
+}
+
+.statusbutton {
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1rem;
+	color: #00b67b;
+}
+
+li.formbox {
+	height: 4rem;
+	padding: 0;
+	margin: 0;
+	div {
+		height: 2.5rem;
+		padding-top: 0.7rem;
+	}
+	input::placeholder {
+		color: #5dffca;
+	}
+	input {
+		background-color: #039263;
+		height: 100%;
+		width: 100%;
+		border-radius: 0.2rem;
+		color: #5dffca;
+		text-align: center;
+	}
+}
+
+li.warry {
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #963625;
+	background-color: #ff0;
+}

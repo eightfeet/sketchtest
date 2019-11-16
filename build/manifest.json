@@ -1,0 +1,21 @@
+{
+  "name": "SKETCH",
+  "short_name": "SKETCH",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#673ab8",
+  "theme_color": "#343434",
+  "icons": [
+    {
+      "src": "./assets/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+.root{
+	padding-top: 5%;
+}
+
+.view{
+	width: 20rem;
+	height: 20rem;
+	overflow: hidden;
+	border-radius: 20rem;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+	}
+}
+
+.iconlayout {
+	margin-top: 5%;
+}
+
+.icon {
+	font-size: 2rem;
+}
+
+.bottombtn {
+	bottom: 10%;
+	width: 100%;
+}
+
+.lh3 {
+	line-height: 2.5rem;
+	color: #aaa;
+}

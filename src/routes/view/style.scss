@@ -1,0 +1,209 @@
+.profile {
+	padding: 56px 20px;
+	min-height: 100%;
+	background: #EEE;
+}
+.slidebox {
+	overflow: hidden;
+	margin: 0 auto;
+	background: #000;
+	position: relative;
+	height: 100%;
+}
+.tranbox {
+	position: absolute;
+	height: 100%;
+}
+.slideitem {
+	float: left;
+	position: relative;
+	text-align: center;
+	.imgitembox {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
+		max-height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.slideitem::before {
+	vertical-align: middle;
+	content: '\000A';
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+	margin-left: -3px;
+}
+
+.bar{
+	position: absolute;
+	height: 3rem;
+	width: 100%;
+	bottom: 1rem;
+	text-align: center;
+}
+
+.root {
+	height: 100%;
+	background-color: #000;
+	position: relative;
+}
+
+.left {
+	position: absolute;
+	display: block;
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	left: 1rem;
+	color: #fff;
+	background-color: #888;
+	border-radius: 4rem;
+}
+
+.right {
+	position: absolute;
+	display: block;
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	bottom: 0;
+	right: 1rem;
+	color: #fff;
+	background-color: #888;
+	border-radius: 4rem;
+}
+
+.center {
+	font-size: 2rem;
+	position: absolute;
+	display: block;
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1.5rem;
+	color: #fff;
+	background-color: #888;
+	border-radius: 4rem;
+}
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.imgbox {
+	position: relative;
+}
+.mask {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
+}
+
+.timer {
+	background-color: rgba(25, 25, 25, 0.5);
+	position: absolute;
+	z-index: 10;
+	padding: 0.5rem;
+	border: none;
+	text-align: center;
+	border-radius: 1rem;
+	color: $gray-light;
+	bottom: 0.5rem;
+	width: 6rem;
+	// left: 50%;
+	// margin-left: -3rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+
+.timer::before {
+	content: "\00A0";
+	display: inline-block;
+	height: 1.2rem;
+	vertical-align: middle;
+}
+
+.timerred {
+	color: $red;
+}
+
+.lh3 {
+	line-height: 2.5rem;
+	color: #aaa;
+}
+
+.index {
+	position: absolute;
+	z-index: 10;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 1rem;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	color: #fff;
+	opacity: 0.3;
+}
+
+.backhome {
+	position: absolute;
+	z-index: 10;
+	padding: 0.5rem;
+	border-radius: 1.2rem;
+	border: none;
+	color: $gray;
+	top: 0.5rem;
+	left: 0.5rem;
+	height: 1.2rem;
+	width: 1.2rem;
+}
+
+.pic {
+	position: absolute;
+	z-index: 10;
+	padding: 0.5rem;
+	border-radius: 1.2rem;
+	border: none;
+	color: $gray;
+	top: 0.5rem;
+	right: 0.5rem;
+	height: 1.2rem;
+	width: 1.2rem;
+}
+.nav {
+	width: 100%;
+}
+.nav i{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	margin-top: -15px;
+	width: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	height: 30px;
+	color: #aaa;
+}
+
+.navright{
+	right: 15px;
+}
+
+.navleft{
+	left: 15px;
+}
+
