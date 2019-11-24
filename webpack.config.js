@@ -11,6 +11,7 @@ module.exports = (env, argv) => {
 	// 环境
 	const isUat = argv.isuat === 'true' ? true : false;
 	const isPro = !isUat && argv.mode === 'production';
+	const isDev = !!argv.mode === 'development';
 	const cdn = process.env.PUBLIC_PATH || null;
 	return {
 		context: path.resolve(__dirname, 'src'),
@@ -202,6 +203,7 @@ module.exports = (env, argv) => {
 			new webpack.DefinePlugin({
 				__UAT__: isUat,
 				__PRO__: isPro,
+				__DEV__: isDev,
 				__PUBLICKPATH__: JSON.stringify(cdn ? `${cdn}/` : './')
 			}),
 			new CopyWebpackPlugin([
